@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CommonDefine.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\File\File.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\HeapObj\HeapObj.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\Image\Image.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\Math\Math.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\Math\Perlin.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Camera\Camera.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\FBO\FBO.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\GLFWwindow\Window.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Mesh\glMesh.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Model\glModel.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Model\glTransform.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Scene\RAScene.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Shader\Shader.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Texture\glTexture.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\VAO\VAO.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\GenData\GenData.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\GenData\GenData_HV.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\GenData\GenData_MV.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\GenData\GenData_TV.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\AABB.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\BVH_Node.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Group.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Hitable.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\HitableVisitor.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Model.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\MoveSphere.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Sky.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Sphere.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Transform.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Triangle.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\TriMesh.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Hitable\Volume.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Material\Dielectric.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Material\Isotropic.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Material\Lambertian.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Material\Light.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Material\Material.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Material\MatVisitor.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Material\Metal.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Material\OpMaterial.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\RayCamera\RayCamera.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\RayCamera\TRayCamera.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Scene\Scene.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Texture\ConstTexture.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Texture\OpTexture.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Texture\Skybox.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Texture\Texture.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Texture\TexVisitor.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="testRTX.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonDefine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Blur.frag" />
+    <None Include="myRTX.frag" />
+    <None Include="myRTX2.frag" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1efd29cb-868c-478f-a057-08b8532e973a}</ProjectGuid>
+    <RootNamespace>LearnRTX</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\SOIL;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glew-2.1.0\lib\Release\Win32;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\SOIL;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glew-2.1.0\lib\Release\Win32;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\SOIL;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glew-2.1.0\lib\Release\Win32;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\SOIL;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glew-2.1.0\lib\Release\Win32;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
