@@ -21,3 +21,8 @@
 ·在光线追踪的学习尾期，作者将继续通过书本和网络资源展开对其他当今流行的全局光照技术技术研究并做实验。
 
 # 结果展示(/Results)
+![Image text](https://github.com/realAYAYA/LearnRTX/blob/main/Results/ResOnCpu.png)
+![Image text](https://github.com/realAYAYA/LearnRTX/blob/main/Results/ResOnGpu1%20.png)
+![Image text](https://github.com/realAYAYA/LearnRTX/blob/main/Results/ResOnGpu2.png)
+![Image text](https://github.com/realAYAYA/LearnRTX/blob/main/Results/ResOnGpu3.png)
+![Image text](https://github.com/realAYAYA/LearnRTX/blob/main/Results/res11.gif)
