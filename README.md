@@ -3,6 +3,8 @@
 
 # Descriptions
 此工程延续LearnOpenGL渲染器代码继续编写，继续加入对：BVH，Octree，BRDF，路径追踪等知识的研究。
+感谢这个作者及他的项目成果：https://github.com/petershirley/raytracingthenextweek
+我的实验本质上是复现这个项目的功能（本着学习目的，照抄是不可以的，思路和算法相同但代码结构会有不同出入）
 力求在GPU中实现光线追踪算法，所以将算法运行在片段着色器，并尽可能通过优化来做到一定程度上的实时性。
 研究工作分为几个阶段：
 0.想办法将场均数据打包发送到GPU
