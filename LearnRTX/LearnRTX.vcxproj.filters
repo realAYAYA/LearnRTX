@@ -82,6 +82,27 @@
     <Filter Include="源文件\CppUtils\RTX\RTXCamera">
       <UniqueIdentifier>{43aff638-d7e6-4c92-b49c-edaac29a2827}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Temp">
+      <UniqueIdentifier>{f6c99080-b285-43c5-b577-22af06f6fe2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CppUtils\Base\Timer">
+      <UniqueIdentifier>{a4a7290c-564e-4b5c-9afd-49737f744106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CppUtils\Base\Operation">
+      <UniqueIdentifier>{8edb9100-8d59-425f-a3da-c516f68885ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CppUtils\RTX\ImgWindow">
+      <UniqueIdentifier>{3f85ca15-18bf-4022-afda-7c8225bc3aa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CppUtils\OpenGL\Glfw">
+      <UniqueIdentifier>{653e3c5e-d510-48ec-b6fc-ce3fcb4ea947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CppUtils\Base\Config">
+      <UniqueIdentifier>{6cee35e1-8faa-4402-be40-4f5f9b83c4a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CppUtils\Base\EvenManager">
+      <UniqueIdentifier>{d6eb8879-8967-4295-8a92-d4d790fddef0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\CppUtil\Basic\File\File.cpp">
@@ -210,7 +231,7 @@
     <ClCompile Include="src\CppUtil\OpenGL\Model\glModel.cpp">
       <Filter>源文件\CppUtils\OpenGL\Model</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp">
+    <ClCompile Include="COPY.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CommonDefine.cpp">
@@ -236,6 +257,39 @@
     </ClCompile>
     <ClCompile Include="testRTX.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GPURoam.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\Texture\ImgTexture.cpp">
+      <Filter>源文件\CppUtils\RTX\RT_Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\Timer\Timer.cpp">
+      <Filter>源文件\CppUtils\Base\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\Operation\LambdaOp.cpp">
+      <Filter>源文件\CppUtils\Base\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\Operation\Operation.cpp">
+      <Filter>源文件\CppUtils\Base\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\Operation\OpQueue.cpp">
+      <Filter>源文件\CppUtils\Base\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\RTX\ImgWindow\TexWindow.cpp">
+      <Filter>源文件\CppUtils\RTX\ImgWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\Operation\OpNode.cpp">
+      <Filter>源文件\CppUtils\Base\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Glfw\Glfw.cpp">
+      <Filter>源文件\CppUtils\OpenGL\Glfw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\Config\Config.cpp">
+      <Filter>源文件\CppUtils\Base\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\EventManager\EventManager.cpp">
+      <Filter>源文件\CppUtils\Base\EvenManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

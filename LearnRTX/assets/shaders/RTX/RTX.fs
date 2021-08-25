@@ -79,7 +79,7 @@ const float PI = 3.1415926;
 const float tMin = 0.001;
 const float FLT_MAX = 99999999999999999999999999999999999999.0;
 const float rayP = 50.0/51.0;// depth = p/(1-p) --> p = depth/(depth+1)
-// types/enum of hitables
+
 const float HT_Sphere         = 0.0;
 const float HT_Group          = 1.0;
 const float HT_BVH_Node       = 2.0;
@@ -88,13 +88,13 @@ const float HT_TriMesh        = 4.0;
 const float HT_Transform      = 5.0;
 const float HT_Volume         = 6.0;
 const float HT_Sky            = 7.0;
-// types/enum of materials
+
 const float MatT_Lambertian   = 0.0;
 const float MatT_Metal        = 1.0;
 const float MatT_Dielectric   = 2.0;
 const float MatT_Light        = 3.0;
 const float MatT_Isotropic    = 4.0;
-// types/enum of textures
+
 const float TexT_ConstTexture = 0.0;
 const float TexT_ImgTexture   = 1.0;
 const float TexT_Skybox       = 2.0;
@@ -421,7 +421,7 @@ float FresnelSchlick(vec3 viewDir, vec3 halfway, float ratioNtNi){
 vec4 Intersect_RayTri(vec3 e, vec3 d, vec3 a, vec3 b, vec3 c){
 	mat3 equation_A = mat3(vec3(a-b), vec3(a-c), d);
 
-	//Æ½ï¿½ï¿½
+	//Æ½ÐÐ
 	if (abs(determinant(equation_A)) < 0.00001)
 		return vec4(0);
 
@@ -433,7 +433,7 @@ vec4 Intersect_RayTri(vec3 e, vec3 d, vec3 a, vec3 b, vec3 c){
 
 bool Scatter_Material(inout struct Ray ray, struct Vertex vertex, float matIdx){
 	if(matIdx == -1.0){
-        ray.color = vec3(1,0,1);//ï¿½Ô´ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ê´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        ray.color = vec3(1,0,1);//ÒÔ´ËÌáÊ¾²ÄÖÊ´æÔÚÎÊÌâ
         return false;
 	}
 
@@ -450,7 +450,7 @@ bool Scatter_Material(inout struct Ray ray, struct Vertex vertex, float matIdx){
 	else if(matType == MatT_Isotropic)
 		return Scatter_Isotropic(ray, vertex, matIdx);
 	else{
-        ray.color = vec3(1,0,1);//ï¿½Ô´ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ê´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        ray.color = vec3(1,0,1);//ÒÔ´ËÌáÊ¾²ÄÖÊ´æÔÚÎÊÌâ
         return false;
     }
 }
@@ -484,7 +484,7 @@ bool Scatter_Metal(inout struct Ray ray, struct Vertex vertex, float matIdx){
     vec3 dir = reflect(ray.dir, vertex.normal);
     vec3 dirFuzz = dir + fuzz * RandInSphere();
     
-    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½Ö®ï¿½ï¿½
+    // ·´Éä¹âÏßÔÚ±íÃæÖ®ÏÂ
     if (dot(dirFuzz, vertex.normal) < 0) {
         ray.color = vec3(0);
         return false;
@@ -503,11 +503,11 @@ bool Scatter_Dielectric(inout struct Ray ray, struct Vertex vertex, float matIdx
     vec3 ud = normalize(ray.dir);
     vec3 un = normalize(vertex.normal);
     vec3 airViewDir;
-    if (dot(ud,un) < 0) {//ï¿½â²¿
+    if (dot(ud,un) < 0) {//Íâ²¿
         refractDir = refract(ud, un, 1.0f / refractIndex);
         airViewDir = -ud;
     }
-    else {//ï¿½Ú²ï¿½
+    else {//ÄÚ²¿
         refractDir = refract(ud, -un, refractIndex);
         if (refractDir == vec3(0)) {
             Ray_Update(ray, vertex.pos, reflectDir, vec3(1));
@@ -563,28 +563,28 @@ bool Scatter_Isotropic(inout struct Ray ray, struct Vertex vertex, float matIdx)
 }
 
 void RayIn_Scene(inout struct Ray ray, out struct HitRst finalHitRst){
-    Stack_Push(3);// Groupçš„ å­©å­æŒ‡é’ˆ çš„ä½ç½®ï¼Œåˆå§‹è¿›æ ˆ
+    Stack_Push(3);//GroupµÄ º¢×ÓÖ¸Õë µÄÎ»ÖÃ
     finalHitRst = HitRst_InValid;
     while(!Stack_Empty()){
         float pIdx = Stack_Pop();
 		float idx = At(SceneData, pIdx);
 		if(idx <= 0){
 			idx = -idx;
-			float type = At(SceneData, idx);// Ö»åªå¯èƒ½æ˜¯é‚£äº›æœ‰å­èŠ‚ç‚¹çš„ç±»åž‹
+			float type = At(SceneData, idx);// Ö»¿ÉÄÜÊÇÄÇÐ©ÓÐ×Ó½ÚµãµÄÀàÐÍ
 			if(type == HT_Group || type == HT_BVH_Node || type == HT_TriMesh ){
 				float matIdx = At(SceneData, idx+1);
 				if( matIdx == -1.0)
 					continue;
 
-				float in_tMax = Stack_Pop();// è¿›å…¥èŠ‚ç‚¹æ—¶çš„tMax
+				float in_tMax = Stack_Pop();// ½øÈë½ÚµãÊ±µÄtMax
 				if (ray.tMax < in_tMax && finalHitRst.isMatCoverable == 1.0){
 					finalHitRst.matIdx = matIdx;
 					finalHitRst.isMatCoverable = At(SceneData, idx+2);
 				}
 			}else if(type == HT_Transform){
-				float in_tMax = Stack_Pop();
+				float in_tMax = Stack_Pop();// ½øÈë½ÚµãÊ±µÄtMax
 				mat4 tfmMat4;
-				LoadMat(At(SceneData,idx+3), tfmMat4);// æŠ½å–mat4
+				LoadMat(At(SceneData,idx+3), tfmMat4);
 				Ray_Transform(ray, tfmMat4);
 				if(ray.tMax < in_tMax){
 					mat3 normTfmMat3;
@@ -785,7 +785,7 @@ void RayIn_Volume(float idx, float state, inout struct Ray ray, inout struct Hit
 		Stack_Pop(ray);
 
 		float t1 = min(ray.tMax, t0 + tMaxFromT0);
-		//ï¿½Ë´ï¿½ï¿½ï¿½ len Î´ï¿½ï¿½ï¿½ï¿½ transform ï¿½ï¿½ scale
+		//´Ë´¦µÄ len Î´¿¼ÂÇ transform µÄ scale
 		float lenInVolume = (t1 - t0) * length(ray.dir);
 
 		float density = At(SceneData, idx+3);
@@ -967,7 +967,7 @@ void RayTracer(inout struct Ray ray){
 
 	if(finalHitRst.hit){
 		bool rayOut = Scatter_Material(ray, finalHitRst.vertex, finalHitRst.matIdx);
-		if(!rayOut){//×·ï¿½Ù½ï¿½ï¿½ï¿½
+		if(!rayOut){//×·×Ù½áÊø
 			ray.tMax = 0;
 			depth = 0;
 			return;

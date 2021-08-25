@@ -20,14 +20,23 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommonDefine.cpp" />
+    <ClCompile Include="GPURoam.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\Config\Config.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\EventManager\EventManager.cpp" />
     <ClCompile Include="src\CppUtil\Basic\File\File.cpp" />
     <ClCompile Include="src\CppUtil\Basic\HeapObj\HeapObj.cpp" />
     <ClCompile Include="src\CppUtil\Basic\Image\Image.cpp" />
     <ClCompile Include="src\CppUtil\Basic\Math\Math.cpp" />
     <ClCompile Include="src\CppUtil\Basic\Math\Perlin.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\Operation\LambdaOp.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\Operation\Operation.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\Operation\OpNode.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\Operation\OpQueue.cpp" />
+    <ClCompile Include="src\CppUtil\Basic\Timer\Timer.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\Camera\Camera.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\FBO\FBO.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\GLFWwindow\Window.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Glfw\Glfw.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\Mesh\glMesh.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\Model\glModel.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\Model\glTransform.cpp" />
@@ -52,6 +61,7 @@
     <ClCompile Include="src\CppUtil\RTX\Hitable\Triangle.cpp" />
     <ClCompile Include="src\CppUtil\RTX\Hitable\TriMesh.cpp" />
     <ClCompile Include="src\CppUtil\RTX\Hitable\Volume.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\ImgWindow\TexWindow.cpp" />
     <ClCompile Include="src\CppUtil\RTX\Material\Dielectric.cpp" />
     <ClCompile Include="src\CppUtil\RTX\Material\Isotropic.cpp" />
     <ClCompile Include="src\CppUtil\RTX\Material\Lambertian.cpp" />
@@ -64,11 +74,12 @@
     <ClCompile Include="src\CppUtil\RTX\RayCamera\TRayCamera.cpp" />
     <ClCompile Include="src\CppUtil\RTX\Scene\Scene.cpp" />
     <ClCompile Include="src\CppUtil\RTX\Texture\ConstTexture.cpp" />
+    <ClCompile Include="src\CppUtil\RTX\Texture\ImgTexture.cpp" />
     <ClCompile Include="src\CppUtil\RTX\Texture\OpTexture.cpp" />
     <ClCompile Include="src\CppUtil\RTX\Texture\Skybox.cpp" />
     <ClCompile Include="src\CppUtil\RTX\Texture\Texture.cpp" />
     <ClCompile Include="src\CppUtil\RTX\Texture\TexVisitor.cpp" />
-    <ClCompile Include="test.cpp" />
+    <ClCompile Include="COPY.cpp" />
     <ClCompile Include="testRTX.cpp" />
   </ItemGroup>
   <ItemGroup>

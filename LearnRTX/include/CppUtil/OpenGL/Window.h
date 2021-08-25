@@ -30,6 +30,7 @@ namespace CppUtil {
 			GLFWwindow* GetGLFWwindow() { return this->window; }
 			unsigned int GetWidth() { return this->src_width; }
 			unsigned int GetHeight() { return this->src_height; }
+			const float GetRatioWH()const { return this->src_width / (float)this->src_height; }
 		private:
 			void Load();
 

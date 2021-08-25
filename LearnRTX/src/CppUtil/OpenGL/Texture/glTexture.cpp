@@ -191,7 +191,7 @@ bool Texture::SetImg(const Image & img) {
 	if (ID == 0)
 		glGenTextures(1, &ID);
 
-	GLenum format;
+	GLenum format = 3;
 	int nrComponents = img.GetChannel();
 	if (nrComponents == 1)
 		format = GL_RED;

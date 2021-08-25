@@ -12,8 +12,8 @@
 #include <CppUtil/OpenGL/Camera.h>
 #include<SOIL/SOIL.h> //#include<CppUtil/Basic/stb_image.h>
 
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
+const unsigned int SCR_WIDTH = 1920;
+const unsigned int SCR_HEIGHT = 1080;
 
 float lastX, lastY;
 bool firstMouse = true;
@@ -21,6 +21,7 @@ bool firstMouse = true;
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
+std::string rootPath;
 std::string shaderPath;
 std::string texturePath;
 std::string modelPath;
@@ -38,9 +39,9 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 // ---------------------------------------------------------------------------------------------
 unsigned int LoadImageToGPU(const char* filename);
 
-// Texture: 
+// Texture to Map: 
 // ---------------------------------------------------------------------------------------------
-size_t Fit2Square(vector<float>& data);
+size_t DataToMap(vector<float>& data);
 
 float lerp(float a, float b, float f);// Accelerating interpolation function
 
@@ -123,7 +124,7 @@ float lerp(float a, float b, float f)
 	return a + f * (b - a);
 }
 
-size_t Fit2Square(vector<float>& data) {
+size_t DataToMap(vector<float>& data) {
 	size_t n = static_cast<size_t>(sqrt(data.size()));
 	if (n * n < data.size())
 		n++;
