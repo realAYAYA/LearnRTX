@@ -331,7 +331,7 @@ Ptr<Config> TexWindow::DoConfig() {
 	string rootPath;
 	Ptr<Config> config = Ptr<Config>(new Config);
 
-	rootPath = string("C:\\Users\\AYAYA2\\source\\repos\\LearnRTX\\LearnRTX");
+	rootPath = string("C:\\Users\\AYAYA2\\source\\repos\\LearnRTX");
 	printf("INFO: [1] First Try.\n");
 	config->Load(rootPath + "/config/config.out");
 	if (!config->IsValid()) {

@@ -14,6 +14,10 @@
 4.光线步进，求交计算，可见性计算
 
 # 项目结构
+运行说明：
+1.打开项目后，将项目属性中C++的头文件目录 和 链接库中的链接库目录修改为当前项目所在目录
+    -例如：项目放在桌面时，（默认是C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\include） 将"\LearnRTX"前面的目录修改为当前项目所在目录
+2.编译运行
 
 # 更新动态
 -对视窗类进行了大的改动，并更换了stb库（改为SOIL）导致贴图载入出现bug修复中（8.22）
@@ -29,3 +33,7 @@
 ![Image text](https://github.com/realAYAYA/LearnRTX/blob/main/Results/ResOnGpu2.png)
 ![Image text](https://github.com/realAYAYA/LearnRTX/blob/main/Results/ResOnGpu3.png)
 ![Image text](https://github.com/realAYAYA/LearnRTX/blob/main/Results/res11.gif)
+
+### 同样基于此渲染器实现的黑洞模拟
+![Image text](https://github.com/realAYAYA/LearnRTX/blob/main/Results/blackhole1.png)
+![Image text](https://github.com/realAYAYA/LearnRTX/blob/main/Results/blackhole2.png)

@@ -22,9 +22,6 @@
     <Filter Include="源文件\CppUtils\Base">
       <UniqueIdentifier>{64584e2d-0dee-49bb-b625-2715e833b6e0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\CppUtils\Base\File">
-      <UniqueIdentifier>{92106968-5334-4a2d-a8aa-f8c662eec739}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\CppUtils\OpenGL\Texture">
       <UniqueIdentifier>{b87c63f4-997a-41fd-aa1a-ecf94889ca7e}</UniqueIdentifier>
     </Filter>
@@ -46,38 +43,14 @@
     <Filter Include="源文件\CppUtils\Base\HeapObj">
       <UniqueIdentifier>{f67d2d5e-3696-4348-b3d5-9c5595ada736}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\CppUtils\Base\Image">
-      <UniqueIdentifier>{abaac847-d779-45f2-a55d-81297906855c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\CppUtils\Base\Math">
       <UniqueIdentifier>{db1cdd1b-31fb-488f-98b0-18d7c419e7bb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\CppUtils\OpenGL\Shader">
-      <UniqueIdentifier>{98834041-30bb-4371-890a-c28b6eb69b22}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\CppUtils\OpenGL\FBO">
-      <UniqueIdentifier>{13bece6a-5796-4331-ba29-42e933c49105}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\CppUtils\OpenGL\Camera">
-      <UniqueIdentifier>{f20566be-472b-49d2-973c-ce3b82852cc9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\CppUtils\OpenGL\GLFWindow">
-      <UniqueIdentifier>{ffbecc15-e693-4147-80db-0bde58036861}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\CppUtils\OpenGL\Mesh">
-      <UniqueIdentifier>{445384a0-5597-49f6-976e-981e437519e3}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\CppUtils\OpenGL\Model">
       <UniqueIdentifier>{ade0a1af-0a70-4e82-b6c3-8ee64574e167}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\CppUtils\OpenGL\VAO">
-      <UniqueIdentifier>{3251f0d9-db6d-46e9-8233-0d36ebd278b9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\CppUtils\RTX\Scene">
       <UniqueIdentifier>{e32794fd-f053-4d8b-ad69-4c53c72483cd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\CppUtils\OpenGL\Scene">
-      <UniqueIdentifier>{bb93d46d-313b-4408-9ce1-089279004d71}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\CppUtils\RTX\RTXCamera">
       <UniqueIdentifier>{43aff638-d7e6-4c92-b49c-edaac29a2827}</UniqueIdentifier>
@@ -85,17 +58,11 @@
     <Filter Include="源文件\Temp">
       <UniqueIdentifier>{f6c99080-b285-43c5-b577-22af06f6fe2d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\CppUtils\Base\Timer">
-      <UniqueIdentifier>{a4a7290c-564e-4b5c-9afd-49737f744106}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\CppUtils\Base\Operation">
       <UniqueIdentifier>{8edb9100-8d59-425f-a3da-c516f68885ee}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\CppUtils\RTX\ImgWindow">
       <UniqueIdentifier>{3f85ca15-18bf-4022-afda-7c8225bc3aa9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\CppUtils\OpenGL\Glfw">
-      <UniqueIdentifier>{653e3c5e-d510-48ec-b6fc-ce3fcb4ea947}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\CppUtils\Base\Config">
       <UniqueIdentifier>{6cee35e1-8faa-4402-be40-4f5f9b83c4a7}</UniqueIdentifier>
@@ -105,9 +72,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\CppUtil\Basic\File\File.cpp">
-      <Filter>源文件\CppUtils\Base\File</Filter>
-    </ClCompile>
     <ClCompile Include="src\CppUtil\OpenGL\Texture\glTexture.cpp">
       <Filter>源文件\CppUtils\OpenGL\Texture</Filter>
     </ClCompile>
@@ -204,29 +168,11 @@
     <ClCompile Include="src\CppUtil\Basic\HeapObj\HeapObj.cpp">
       <Filter>源文件\CppUtils\Base\HeapObj</Filter>
     </ClCompile>
-    <ClCompile Include="src\CppUtil\Basic\Image\Image.cpp">
-      <Filter>源文件\CppUtils\Base\Image</Filter>
-    </ClCompile>
     <ClCompile Include="src\CppUtil\Basic\Math\Math.cpp">
       <Filter>源文件\CppUtils\Base\Math</Filter>
     </ClCompile>
     <ClCompile Include="src\CppUtil\Basic\Math\Perlin.cpp">
       <Filter>源文件\CppUtils\Base\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CppUtil\OpenGL\Camera\Camera.cpp">
-      <Filter>源文件\CppUtils\OpenGL\Camera</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CppUtil\OpenGL\FBO\FBO.cpp">
-      <Filter>源文件\CppUtils\OpenGL\FBO</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CppUtil\OpenGL\Shader\Shader.cpp">
-      <Filter>源文件\CppUtils\OpenGL\Shader</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CppUtil\OpenGL\GLFWwindow\Window.cpp">
-      <Filter>源文件\CppUtils\OpenGL\GLFWindow</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CppUtil\OpenGL\Mesh\glMesh.cpp">
-      <Filter>源文件\CppUtils\OpenGL\Mesh</Filter>
     </ClCompile>
     <ClCompile Include="src\CppUtil\OpenGL\Model\glModel.cpp">
       <Filter>源文件\CppUtils\OpenGL\Model</Filter>
@@ -237,14 +183,8 @@
     <ClCompile Include="CommonDefine.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\CppUtil\OpenGL\VAO\VAO.cpp">
-      <Filter>源文件\CppUtils\OpenGL\VAO</Filter>
-    </ClCompile>
     <ClCompile Include="src\CppUtil\RTX\Scene\Scene.cpp">
       <Filter>源文件\CppUtils\RTX\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CppUtil\OpenGL\Scene\RAScene.cpp">
-      <Filter>源文件\CppUtils\OpenGL\Scene</Filter>
     </ClCompile>
     <ClCompile Include="src\CppUtil\OpenGL\Model\glTransform.cpp">
       <Filter>源文件\CppUtils\OpenGL\Model</Filter>
@@ -264,9 +204,6 @@
     <ClCompile Include="src\CppUtil\RTX\Texture\ImgTexture.cpp">
       <Filter>源文件\CppUtils\RTX\RT_Texture</Filter>
     </ClCompile>
-    <ClCompile Include="src\CppUtil\Basic\Timer\Timer.cpp">
-      <Filter>源文件\CppUtils\Base\Timer</Filter>
-    </ClCompile>
     <ClCompile Include="src\CppUtil\Basic\Operation\LambdaOp.cpp">
       <Filter>源文件\CppUtils\Base\Operation</Filter>
     </ClCompile>
@@ -282,14 +219,50 @@
     <ClCompile Include="src\CppUtil\Basic\Operation\OpNode.cpp">
       <Filter>源文件\CppUtils\Base\Operation</Filter>
     </ClCompile>
-    <ClCompile Include="src\CppUtil\OpenGL\Glfw\Glfw.cpp">
-      <Filter>源文件\CppUtils\OpenGL\Glfw</Filter>
-    </ClCompile>
     <ClCompile Include="src\CppUtil\Basic\Config\Config.cpp">
       <Filter>源文件\CppUtils\Base\Config</Filter>
     </ClCompile>
     <ClCompile Include="src\CppUtil\Basic\EventManager\EventManager.cpp">
       <Filter>源文件\CppUtils\Base\EvenManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Blackhole.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Texture\glSkybox.cpp">
+      <Filter>源文件\CppUtils\OpenGL\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Camera\Camera.cpp">
+      <Filter>源文件\CppUtils\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\FBO\FBO.cpp">
+      <Filter>源文件\CppUtils\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Glfw\Glfw.cpp">
+      <Filter>源文件\CppUtils\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\GLFWwindow\glWindow.cpp">
+      <Filter>源文件\CppUtils\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Mesh\glMesh.cpp">
+      <Filter>源文件\CppUtils\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Scene\RAScene.cpp">
+      <Filter>源文件\CppUtils\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\Shader\Shader.cpp">
+      <Filter>源文件\CppUtils\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\OpenGL\VAO\VAO.cpp">
+      <Filter>源文件\CppUtils\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\Timer\Timer.cpp">
+      <Filter>源文件\CppUtils\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\Image\Image.cpp">
+      <Filter>源文件\CppUtils\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CppUtil\Basic\File\File.cpp">
+      <Filter>源文件\CppUtils\Base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

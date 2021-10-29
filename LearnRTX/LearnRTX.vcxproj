@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Blackhole.cpp" />
     <ClCompile Include="CommonDefine.cpp" />
     <ClCompile Include="GPURoam.cpp" />
     <ClCompile Include="src\CppUtil\Basic\Config\Config.cpp" />
@@ -35,7 +36,7 @@
     <ClCompile Include="src\CppUtil\Basic\Timer\Timer.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\Camera\Camera.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\FBO\FBO.cpp" />
-    <ClCompile Include="src\CppUtil\OpenGL\GLFWwindow\Window.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\GLFWwindow\glWindow.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\Glfw\Glfw.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\Mesh\glMesh.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\Model\glModel.cpp" />
@@ -43,6 +44,7 @@
     <ClCompile Include="src\CppUtil\OpenGL\Scene\RAScene.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\Shader\Shader.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\Texture\glTexture.cpp" />
+    <ClCompile Include="src\CppUtil\OpenGL\Texture\glSkybox.cpp" />
     <ClCompile Include="src\CppUtil\OpenGL\VAO\VAO.cpp" />
     <ClCompile Include="src\CppUtil\RTX\GenData\GenData.cpp" />
     <ClCompile Include="src\CppUtil\RTX\GenData\GenData_HV.cpp" />

@@ -66,10 +66,10 @@ int main(int argc, char** argv) {
 	Glfw::GetInstance()->LockCursor();
 
 	std::string exePath = argv[0];
-	rootPath = exePath.substr(0, exePath.find_last_of('\\')) + "\\..\\LearnRTX\\assets\\";
-	shaderPath = exePath.substr(0, exePath.find_last_of('\\')) + "\\..\\LearnRTX\\assets\\shaders\\";
-	texturePath = exePath.substr(0, exePath.find_last_of('\\')) + "\\..\\LearnRTX\\assets\\textures\\";
-	modelPath = exePath.substr(0, exePath.find_last_of('\\')) + "\\..\\LearnRTX\\assets\\model\\";
+	rootPath = exePath.substr(0, exePath.find_last_of('\\')) + "\\..\\assets\\";
+	shaderPath = exePath.substr(0, exePath.find_last_of('\\')) + "\\..\\assets\\shaders\\";
+	texturePath = exePath.substr(0, exePath.find_last_of('\\')) + "\\..\\assets\\textures\\";
+	modelPath = exePath.substr(0, exePath.find_last_of('\\')) + "\\..\\assets\\model\\";
 
 	//------------ Scene
 	Scene::CPtr scene = CreateScene0(ratioWH);
@@ -269,12 +269,12 @@ int main(int argc, char** argv) {
 
 Scene::CPtr CreateScene0(float ratioWH) {
 	const std::vector<std::string> str_Vec_Img_Skybox = {
-		texturePath + "../skybox/right.jpg",
-		texturePath + "../skybox/left.jpg",
-		texturePath + "../skybox/top.jpg",
-		texturePath + "../skybox/bottom.jpg",
-		texturePath + "../skybox/front.jpg",
-		texturePath + "../skybox/back.jpg"
+		rootPath + "skybox\\sea_skybox\\right.jpg",
+		rootPath + "skybox\\sea_skybox\\left.jpg",
+		rootPath + "skybox\\sea_skybox\\top.jpg",
+		rootPath + "skybox\\sea_skybox\\bottom.jpg",
+		rootPath + "skybox\\sea_skybox\\back.jpg",
+		rootPath + "skybox\\sea_skybox\\front.jpg"
 	};
 
 	vector<string> skyboxImgPath(6);

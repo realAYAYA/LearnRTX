@@ -20,7 +20,8 @@ namespace RTX {
 	public:
 		typedef std::vector<CppUtil::Basic::CPtr<CppUtil::Basic::Image> > SkyboxImgs;
 		//right, left, top, bottom, front, back
-		Skybox(const std::vector<std::string> & skybox);
+		Skybox(const std::string path);
+		Skybox(const std::vector<std::string> & skybox);		
 		const SkyboxImgs & GetSkyboxImgs() const { return imgs; }
 		bool IsValid() const;
 	private:

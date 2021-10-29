@@ -7,6 +7,42 @@ using namespace CppUtil::Basic;
 using namespace glm;
 using namespace std;
 
+RTX::Skybox::Skybox(const std::string path)
+{
+	const std::vector<std::string> skybox = {
+		path + "right.jpg",
+		path + "left.jpg",
+		path + "top.jpg",
+		path + "bottom.jpg",
+		path + "back.jpg",
+		path + "front.jpg"
+	};
+
+	if (skybox.size() != 6)
+		return;
+
+	// loads a cubemap texture from 6 individual texture faces
+	// order:
+	// +X (right)
+	// -X (left)
+	// +Y (top)
+	// -Y (bottom)
+	// +Z (front) 
+	// -Z (back)
+	// -------------------------------------------------------
+	for (size_t i = 0; i < 6; i++)
+	{
+		auto img = new Image(skybox[i].c_str(), false);
+		if (!img->IsValid()) {
+			printf("ERROR: Skybox texture failed to load at path: %s\n", skybox[i].c_str());
+			imgs.clear();
+			return;
+		}
+
+		imgs.push_back(CppUtil::Basic::CPtr<Image>(img));
+	}
+}
+
 Skybox::Skybox(const vector<string> & skybox) {
 	if (skybox.size() != 6)
 		return;

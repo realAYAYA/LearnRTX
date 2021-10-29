@@ -61,33 +61,6 @@ namespace CppUtil {
 		private:
 			MeshType type;
 		};
-
-		class SimpleMesh:public Interface {
-		public:
-			enum Type// 数组存储形式
-			{
-				ENUM_FORMAT_PCT,// pos color texcoord
-				ENUM_FORMAT_PNT,// pos normal texcoord
-				ENUM_FORMAT_PN,// pos normal
-				ENUM_FORMAT_PT,// pos texcoord
-				ENUM_FORMAT_P,// only pos
-			};
-			SimpleMesh(const GLfloat _vertices[], const int size, Type type);
-			SimpleMesh(const GLfloat _vertices[], const int size1, Type type, const GLuint _indices[], const int size2);
-
-			virtual void Draw(Shader& shader)override;
-		private:
-			void setupMesh();
-
-			bool IsValid;
-
-			unsigned int VAO;
-			vector<Vertex> vertices;
-			vector<unsigned int> indices;
-			vector<TextureInfo> textures;
-			int drawCount;// 根据顶点数目决定绘制次数
-			Type type;
-		};
 	}
 }
 #endif // !MESH_H_

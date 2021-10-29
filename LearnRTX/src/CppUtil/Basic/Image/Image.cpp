@@ -151,15 +151,15 @@ Image::Pixel<double> Image::GetPixel_D(size_t x, size_t y) const {
 bool Image::Load(const std::string & fileName, bool flip) {
 	Free();
 
+	int tmpW, tmpH, tmpC;
 	//stbi_set_flip_vertically_on_load(flip);
 
-	//int tmpW, tmpH, tmpC;
 	//data = stbi_load(fileName.c_str(), &tmpW, &tmpH, &tmpC, 0);
-	int tmpW, tmpH;
-	data = SOIL_load_image(fileName.c_str(), &tmpW, &tmpH, 0, SOIL_LOAD_RGB);
+	
+	data = SOIL_load_image(fileName.c_str(), &tmpW, &tmpH, &tmpC, 0);
 	width = tmpW;
 	height = tmpH;
-	channel = 0;
+	channel = tmpC;
 
 	if (data == NULL) {
 		type = ENUM_SRC_TYPE_INVALID;
