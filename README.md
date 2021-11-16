@@ -1,5 +1,7 @@
 # LearnRTX
-基于OpenGL的光线追踪的实验。
+基于OpenGL的光线追踪的实验。  
+此项目目前暂停更新：为了支持更好的项目结构和支持更多的光照方案，我重新组织了OpenGL渲染器的实现结构  
+新的代码项目已移植到：https://github.com/realAYAYA/LearnGI  
 
 # Descriptions
 此工程延续LearnOpenGL渲染器代码继续编写，继续加入对：BVH，Octree，BRDF，路径追踪等知识的研究。
