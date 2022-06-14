@@ -162,12 +162,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>Default</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LearnRTX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\SOIL;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glew-2.1.0\lib\Release\Win32;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\LearnRTX\lib\SOIL;..\LearnRTX\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;..\LearnRTX\lib\glew-2.1.0;..\LearnRTX\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -179,14 +179,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>Default</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LearnRTX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\SOIL;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glew-2.1.0\lib\Release\Win32;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\LearnRTX\lib\SOIL;..\LearnRTX\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;..\LearnRTX\lib\glew-2.1.0;..\LearnRTX\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -196,12 +196,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>Default</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LearnRTX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\SOIL;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\glew-2.1.0\lib\Release\Win32;C:\Users\AYAYA2\source\repos\LearnRTX\LearnRTX\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\LearnRTX\lib\SOIL;..\LearnRTX\lib\glfw-3.3.2.bin.WIN32\lib-vc2019;..\LearnRTX\lib\glew-2.1.0\lib\Release\Win32;..\LearnRTX\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
